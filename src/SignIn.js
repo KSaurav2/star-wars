@@ -45,7 +45,7 @@ export default function SignIn(props) {
   }
 
   function login() {
-    axios.get("https://swapi.dev/api/people/").then(result => {
+    axios.get(`https://swapi.dev/api/people/?search=${userName}`).then(result => {
       if (result.status === 200) {
         checkUserAuthenticity(result.data.results);
       } else {
