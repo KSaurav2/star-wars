@@ -21,6 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "http://ksaurav2.github.io/star-wars",
   "eslintConfig": {
     "extends": [
       "react-app",

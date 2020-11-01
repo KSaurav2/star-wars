@@ -20,7 +20,7 @@ function App(props) {
 
   return (
     <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens }}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Appbar />
           <Route exact path="/" component={SignIn} />
